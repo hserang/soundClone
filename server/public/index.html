@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Monetization</title>
+</head>
+
+<body>
+  <div id="container"> </div>
+  <a href="http://localhost:8080/music?id=2Fast.mp3" target="_blank"> Play </a>
+<script src="/scripts/monetization-client.js"></script>
+<script>
+    var monetizerClient = new MonetizerClient();
+    monetizerClient.start()
+      .then(function () {
+        var img = document.createElement('img')
+        var container = document.getElementById('container')
+        img.src = '/content/'
+        img.width = '600'
+        container.appendChild(img)
+      })
+      .catch(function (error) {
+        console.log("Error", error);
+      })
+  </script>
+</body>
+</html>

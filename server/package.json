@@ -1,0 +1,19 @@
+{
+  "name": "soundclone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express-web-monetization": "^1.0.0",
+    "react-media-player": "^0.7.0",
+    "serve-index": "^1.9.1"
+  }
+}
